@@ -12,13 +12,13 @@
 		<div class="container mx-auto px-4">
 			<div class="row mx-auto">
 				<div class="col-md-5 mx-auto">
-					<div class="card card-body text-center p-4 shadow-sm my-2">
-						<p class="text-center m-0 " id="money"></p>
+					<div class="card card-body text-center p-0 shadow-sm my-2">
+						<div id="money" class="row gap-0"></div>
 					</div>
 				</div>
 				<div class="col-md-5 mx-auto">
-					<div class="card card-body text-center p-4 shadow-sm my-2">
-						<p class="text-center mb-0 " id="status"></p>
+					<div class="card card-body text-center p-0 shadow-sm my-2">
+						<div id="status" class="row gap-0"></div>
 					</div>
 				</div>
 			</div>
@@ -37,7 +37,6 @@
 							<button class="btn btn-primary" id="btn-money-form">Guardar</button>
 						</form>
 					</div>
-
 					<div class="card card-body text-center p-4 shadow-sm my-2">
 						<form id="egreso-form" class="text-center">
 							<i style="font-size: 4em" class="las la-poo text-primary"></i>
@@ -56,7 +55,6 @@
 					
 				</div>
 			</div>
-
 			
 		</div>
 		<!-- The core Firebase JS SDK is always required and must be listed first -->
@@ -64,19 +62,7 @@
 		<script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
 		<!-- TODO: Add SDKs for Firebase products that you want to use
 		https://firebase.google.com/docs/web/setup#available-libraries -->
-		<script>
-		// Your web app's Firebase configuration
-		var firebaseConfig = {
-		apiKey: "AIzaSyB87E35LF7M-C2CYhhMJNB_nXjkZ7phFXE",
-		authDomain: "fire-money-7c3ce.firebaseapp.com",
-		projectId: "fire-money-7c3ce",
-		storageBucket: "fire-money-7c3ce.appspot.com",
-		messagingSenderId: "855462612566",
-		appId: "1:855462612566:web:5a2df90c6083fc289d75f7"
-		};
-		// Initialize Firebase
-		firebase.initializeApp(firebaseConfig);
-		</script>
+		<script src="firebase.js"></script>
 		<script src="index.js"></script>
 	</body>
 </html>
